@@ -1,0 +1,14 @@
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+.mat-table {
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+.mat-cell{
+  color: black;
+  background-color:#ffffff;
+}
+.mat-header-cell{
+  color:black;
+  background-color: #ffffff;
+}
