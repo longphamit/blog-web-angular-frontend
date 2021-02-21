@@ -13,7 +13,16 @@ import { NavbarComponent } from './component/navbar/navbar.component';
 import { LoginComponent } from './pages/login/login.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-
+import { AdminHeaderComponent } from './component/admin/admin-header/admin-header.component';
+import { AdminFooterComponent } from './component/admin/admin-footer/admin-footer.component';
+import { AdminNavbarComponent } from './component/admin/admin-navbar/admin-navbar.component';
+import { RightbarComponent } from './component/rightbar/rightbar.component';
+import { PostManageComponent } from './pages/post-manage/post-manage.component';
+import { CheckEditorComponent } from './component/check-editor/check-editor.component'
+import { CKEditorModule } from 'ckeditor4-angular';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatInputModule} from '@angular/material/input';
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,6 +32,13 @@ import { HttpClientModule } from '@angular/common/http';
     AdminComponent,
     NavbarComponent,
     LoginComponent,
+    AdminHeaderComponent,
+    AdminFooterComponent,
+    AdminNavbarComponent,
+    RightbarComponent,
+    PostManageComponent,
+    CheckEditorComponent
+
   ],
   imports: [
     BrowserModule,
@@ -30,8 +46,11 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
-    HttpClientModule
-    
+    HttpClientModule,
+    CKEditorModule,
+    MatPaginatorModule,
+    MatInputModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

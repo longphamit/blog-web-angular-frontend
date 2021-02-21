@@ -2,10 +2,6 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Account } from '../model/account';
-
-
-
-
 const BASE_URL="http://localhost:4300/api"
 @Injectable({
   providedIn: 'root'

@@ -1,27 +1,53 @@
 <app-header></app-header>
 <app-navbar></app-navbar>
-<div class="container">
-  <section>
-    <div class="example-label">Basic</div>
-    <div class="example-button-row">
-      <button mat-button>Basic</button>
-      <button mat-button color="primary">Primary</button>
-      <button mat-button color="accent">Accent</button>
-      <button mat-button color="warn">Warn</button>
-      <button mat-button disabled>Disabled</button>
-      <a mat-button href="https://www.google.com/" target="_blank">Link</a>
+<div class="container" style="margin-top:30px">
+  <div class="row">
+    <app-rightbar></app-rightbar>
+    <div class="col-sm-8">
+      <div>
+        <h2>TITLE HEADING</h2>
+        <h5>Title description, Dec 7, 2017</h5>
+        <div class="fakeimg">Fake Image</div>
+        <p>Some text..</p>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco.</p>
+        <br>
+      </div>
+      <div>
+        <h2>TITLE HEADING</h2>
+        <h5>Title description, Sep 2, 2017</h5>
+        <div class="fakeimg">Fake Image</div>
+        <p>Some text..</p>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco.</p>
+        <br>
+      </div>
+      <div>
+        <h2>TITLE HEADING</h2>
+        <h5>Title description, Sep 2, 2017</h5>
+        <div class="fakeimg">Fake Image</div>
+        <p>Some text..</p>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco.</p>
+        <br>
+      </div>
+      <div>
+        <h2>TITLE HEADING</h2>
+        <h5>Title description, Sep 2, 2017</h5>
+        <div class="fakeimg">Fake Image</div>
+        <p>Some text..</p>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco.</p>
+        <br>
+      </div>
+      <mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]">
+      </mat-paginator>
+
     </div>
-  </section>
-  <section>
-    <div class="example-label">Raised</div>
-    <div class="example-button-row">
-      <button mat-raised-button>Basic</button>
-      <button mat-raised-button color="primary">Primary</button>
-      <button mat-raised-button color="accent">Accent</button>
-      <button mat-raised-button color="warn">Warn</button>
-      <button mat-raised-button disabled>Disabled</button>
-      <a mat-raised-button href="https://www.google.com/" target="_blank">Link</a>
-    </div>
-  </section>
+  </div>
 </div>
-  <app-footer></app-footer>
+<app-footer></app-footer>
